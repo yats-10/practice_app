@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RED-{MM}-{###}",
+ "creation": "2024-03-28 08:08:11.340639",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_name",
+  "category",
+  "model",
+  "hourly_rent",
+  "column_break_chby3",
+  "rented_until",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "label": "Equipment Name"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Choose\nPC\nLaptop\nMonitor\nPrinter\nProjector"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "hourly_rent",
+   "fieldtype": "Int",
+   "label": "Hourly Rent"
+  },
+  {
+   "fieldname": "column_break_chby3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rented_until",
+   "fieldtype": "Datetime",
+   "label": "Rented Until"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nRented"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-28 08:09:02.383529",
+ "modified_by": "Administrator",
+ "module": "Rental Electronics Management",
+ "name": "Rental Electronics Device",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
