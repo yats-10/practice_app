@@ -7,12 +7,16 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "customer",
+  "section_break_euorf",
+  "stock_item",
   "equipment_name",
   "category",
   "model",
-  "hourly_rent",
   "column_break_chby3",
+  "hourly_rent",
   "rented_until",
+  "total_rented_hours",
   "status"
  ],
  "fields": [
@@ -53,11 +57,34 @@
    "in_list_view": 1,
    "label": "Status",
    "options": "Available\nRented"
+  },
+  {
+   "fieldname": "stock_item",
+   "fieldtype": "Link",
+   "label": "Stock Item",
+   "options": "Item",
+   "read_only_depends_on": "item.stock_item;"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_rented_hours",
+   "fieldtype": "Data",
+   "label": "Total Rented Hours"
+  },
+  {
+   "fieldname": "section_break_euorf",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-28 08:09:02.383529",
+ "modified": "2024-04-04 22:42:19.912468",
  "modified_by": "Administrator",
  "module": "Rental Electronics Management",
  "name": "Rental Electronics Device",
@@ -72,6 +99,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
    "share": 1,
    "write": 1
   }
