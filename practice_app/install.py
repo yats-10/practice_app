@@ -1,6 +1,9 @@
 from frappe.custom.doctype.custom_field.custom_field import create_custom_fields
 from frappe import _
 
+def after_install():
+	create_item_custom_fields()
+
 def create_item_custom_fields():
 	create_custom_fields(
 		{
@@ -24,4 +27,4 @@ def create_item_custom_fields():
 		}
 		
 	)
-	print("hello")
+	print("Custom Fields Created")
