@@ -40,7 +40,8 @@
   {
    "fieldname": "hourly_rent",
    "fieldtype": "Int",
-   "label": "Hourly Rent"
+   "label": "Hourly Rent",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_chby3",
@@ -84,10 +85,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-04 22:42:19.912468",
+ "modified": "2024-04-06 21:08:34.503520",
  "modified_by": "Administrator",
  "module": "Rental Electronics Management",
  "name": "Rental Electronics Device",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -117,5 +119,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

@@ -189,10 +189,8 @@ user_data_fields = [
 # ]
 
 doctype_js = {"Item" : "public/js/item.js"}
-doctype_list_js = {"Rental Electronics Device" : "public/js/rental_electronics_device_list.js"}
-fixtures = [
-    "Custom Field"
-]
+after_install = "practice_app.install.after_install"
+
 
 
 
