@@ -5,6 +5,7 @@ frappe.ui.form.on('Item', {
             frm.toggle_display("rental_electronic_device", true);
             frm.set_value("stock_uom", "Hour");
             frm.set_value("is_stock_item", 0);
+            frm.set_value("is_purchase_item",0);
         } 
     }
 })
